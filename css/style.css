@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Ropa+Sans&family=Texturina:wght@100&display=swap");
+
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MedievalSharp", cursive;
+}
+
+body {
+  background-image: url("/img/dragon.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+header img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  font-size: 50px;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header button {
+  background-color: white;
+  border-radius: 5px;
+  width: 15%;
+  height: 60px;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  opacity: 0.9;
+  /* background-color: white; */
+  border: rgb(7, 0, 0) solid 3px;
+  cursor: pointer;
+}
+
+.page-title {
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem;
+}
+
+.page-title h2 {
+  color: white;
+  font-size: 50px;
+  padding: 8vh 0;
+}
+
+.page-title div {
+  padding: 3rem;
+}
+
+.page-title h3 {
+  font-size: 30px;
+  padding-left: 3rem;
+}
+
+.page-title h4 {
+  padding: 3rem;
+  font-size: 17px;
+  color: white;
+}
+
+#page-title-btn {
+  width: 200px;
+  height: 100px;
+  padding: 80px 0px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  opacity: 0.8;
+}

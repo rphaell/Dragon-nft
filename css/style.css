@@ -9,9 +9,11 @@
 }
 
 body {
-  background-image: url("/img/dragon.jpg");
+  background-image: url("/img/dragon2.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  overflow: hidden;
+  /* min-width: 100%; */
 }
 
 header {
@@ -70,13 +72,15 @@ header button {
 }
 
 .page-title h2 {
+  display: flex;
   color: white;
   font-size: 50px;
   padding: 8vh 0;
+  padding-left: 3rem;
 }
 
 .page-title div {
-  padding: 3rem;
+  padding-left: 3rem;
 }
 
 .page-title h3 {
@@ -86,16 +90,187 @@ header button {
 
 .page-title h4 {
   padding: 3rem;
-  font-size: 17px;
+  font-size: 20px;
   color: white;
 }
 
 #page-title-btn {
-  width: 200px;
-  height: 100px;
-  padding: 80px 0px;
+  position: relative;
   display: flex;
-  gap: 40px;
   flex-direction: column;
-  opacity: 0.8;
+  margin-top: 4rem;
+  gap: 30px;
+}
+
+.buttons {
+  width: 20%;
+  color: black;
+  height: 60px;
+  border-radius: 7px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  height: 60px;
+  background-color: black;
+  opacity: 0.9;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1254px) {
+  header {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav a {
+    text-decoration: none;
+    padding: 20px 6px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #logo {
+    font-size: 45px;
+  }
+
+  header button {
+    background-color: white;
+    border-radius: 5px;
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    opacity: 0.9;
+    /* background-color: white; */
+    border: rgb(7, 0, 0) solid 3px;
+    cursor: pointer;
+  }
+  header img {
+    width: 60px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1052px) {
+  header {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav a {
+    text-decoration: none;
+    padding: 20px 6px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  #logo {
+    font-size: 45px;
+  }
+
+  header button {
+    background-color: white;
+    border-radius: 5px;
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    opacity: 0.9;
+    /* background-color: white; */
+    border: rgb(7, 0, 0) solid 3px;
+    cursor: pointer;
+  }
+  header img {
+    width: 70px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1052px) {
+  header nav a {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  header {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav a {
+    display: none;
+  }
+  #logo {
+    font-size: 35px;
+  }
+
+  header button {
+    background-color: white;
+    border-radius: 5px;
+    width: 35%;
+    height: 50px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    opacity: 0.9;
+    /* background-color: white; */
+    border: rgb(7, 0, 0) solid 3px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav a {
+    display: none;
+  }
+  #logo {
+    font-size: 35px;
+  }
+
+  header button {
+    background-color: white;
+    border-radius: 5px;
+    width: 35%;
+    height: 70px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    opacity: 0.9;
+    /* background-color: white; */
+    border: rgb(7, 0, 0) solid 3px;
+    cursor: pointer;
+  }
 }
